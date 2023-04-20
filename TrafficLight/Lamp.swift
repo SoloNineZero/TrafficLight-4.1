@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Lamp: View {
     let color: Color
+    let alpha: Double
     
     var body: some View {
         Circle()
@@ -16,11 +17,12 @@ struct Lamp: View {
             .frame(width: 120, height: 120)
             .overlay(Circle().stroke(Color.white, lineWidth: 2))
             .shadow(color: color, radius: 10)
+            .opacity(alpha)
     }
 }
 
 struct Lamp_Previews: PreviewProvider {
     static var previews: some View {
-        Lamp(color: .red)
+        Lamp(color: .green, alpha: 0.2)
     }
 }

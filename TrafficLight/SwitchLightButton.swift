@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct SwitchLightButton: View {
-    @State var buttonText = "Start"
+    let title: String
+    let action: () -> Void
     
     var body: some View {
-        Button(action: {
-            buttonText = "Next"
-        }) {
-            Text(buttonText)
+        Button(action: action) {
+            Text(title)
                 .padding(
                     EdgeInsets(
                         top: 0,
@@ -28,13 +27,11 @@ struct SwitchLightButton: View {
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .overlay(RoundedRectangle(cornerRadius: 20 ).stroke(Color.white, lineWidth: 2))
         }
-        Spacer()
-        .frame(width: 210, height: 40)
     }
 }
 
 struct SwitchLightButton_Previews: PreviewProvider {
     static var previews: some View {
-        SwitchLightButton()
+        SwitchLightButton(title: "Start", action: { } )
     }
 }
