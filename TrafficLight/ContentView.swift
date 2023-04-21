@@ -27,16 +27,18 @@ struct ContentView: View {
         VStack {
             VStack {
                 Lamp(color: .red, alpha: redLight)
+                    .padding(10)
                 Lamp(color: .yellow, alpha: yellowLight)
-                    .padding(20)
+                    .padding(10)
                 Lamp(color: .green, alpha: greenLight)
-                    .padding(20)
+                    .padding(10)
             }
             Spacer()
             SwitchLightButton(title: title, action: getOnColor)
         }
-        .padding(50)
+        .padding(30)
     }
+    
     private func getOnColor() {
         if title == "Start" {
             title = "Next"
