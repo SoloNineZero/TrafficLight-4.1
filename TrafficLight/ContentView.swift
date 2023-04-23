@@ -13,36 +13,40 @@ enum Light {
 
 struct ContentView: View {
     @State private var title = "Start"
-    
-    let onLight = 1.0
-    let offLight = 0.2
-    
-    @State private var redLight = 0.2
-    @State private var yellowLight = 0.2
-    @State private var greenLight = 0.2
+
+    @State private var redLight = 0.3
+    @State private var yellowLight = 0.3
+    @State private var greenLight = 0.3
     
     @State private var currentLight = Light.red
     
     var body: some View {
         VStack {
             VStack {
-                Lamp(color: .red, alpha: redLight)
+                LampCircleView(color: .red, opacity: redLight)
                     .padding(10)
-                Lamp(color: .yellow, alpha: yellowLight)
+                LampCircleView(color: .yellow, opacity: yellowLight)
                     .padding(10)
-                Lamp(color: .green, alpha: greenLight)
+                LampCircleView(color: .green, opacity: greenLight)
                     .padding(10)
             }
             Spacer()
             SwitchLightButton(title: title, action: getOnColor)
         }
-        .padding(30)
+        .padding(50)
     }
     
     private func getOnColor() {
         if title == "Start" {
             title = "Next"
         }
+        nextColor()
+    }
+     
+    private func nextColor() {
+        
+        let onLight = 1.0
+        let offLight = 0.2
         
         switch currentLight {
         case .red:

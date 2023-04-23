@@ -11,22 +11,20 @@ struct SwitchLightButton: View {
     let title: String
     let action: () -> Void
     
-    var body: some View {
+    var body: some View {        
         Button(action: action) {
             Text(title)
-                .padding(
-                    EdgeInsets(
-                        top: 0,
-                        leading: 70,
-                        bottom: 0,
-                        trailing: 70))
-                .foregroundColor(.white)
-                .padding()
-                .background(Color.blue)
-                .font(.system(size: 35))
-                .clipShape(RoundedRectangle(cornerRadius: 20))
-                .overlay(RoundedRectangle(cornerRadius: 20 ).stroke(Color.white, lineWidth: 2))
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(Color.white)
         }
+        .frame(width: 200, height: 55)
+        .background(Color.blue)
+        .cornerRadius(20)
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+            .stroke(Color.white, lineWidth: 4)
+        )
     }
 }
 

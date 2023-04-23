@@ -11,7 +11,7 @@
 		A82654C929F194B100B6E981 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82654C829F194B100B6E981 /* ContentView.swift */; };
 		A82654CB29F194B200B6E981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A82654CA29F194B200B6E981 /* Assets.xcassets */; };
 		A82654CE29F194B200B6E981 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A82654CD29F194B200B6E981 /* Preview Assets.xcassets */; };
-		A82654D529F194F400B6E981 /* Lamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82654D429F194F400B6E981 /* Lamp.swift */; };
+		A82654D529F194F400B6E981 /* LampCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82654D429F194F400B6E981 /* LampCircleView.swift */; };
 		A82654D929F1A64A00B6E981 /* SwitchLightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82654D829F1A64A00B6E981 /* SwitchLightButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +21,7 @@
 		A82654C829F194B100B6E981 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A82654CA29F194B200B6E981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A82654CD29F194B200B6E981 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A82654D429F194F400B6E981 /* Lamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lamp.swift; sourceTree = "<group>"; };
+		A82654D429F194F400B6E981 /* LampCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampCircleView.swift; sourceTree = "<group>"; };
 		A82654D829F1A64A00B6E981 /* SwitchLightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchLightButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +59,7 @@
 				A82654C829F194B100B6E981 /* ContentView.swift */,
 				A82654CA29F194B200B6E981 /* Assets.xcassets */,
 				A82654CC29F194B200B6E981 /* Preview Content */,
-				A82654D429F194F400B6E981 /* Lamp.swift */,
+				A82654D429F194F400B6E981 /* LampCircleView.swift */,
 				A82654D829F1A64A00B6E981 /* SwitchLightButton.swift */,
 			);
 			path = TrafficLight;
@@ -146,7 +146,7 @@
 				A82654D929F1A64A00B6E981 /* SwitchLightButton.swift in Sources */,
 				A82654C929F194B100B6E981 /* ContentView.swift in Sources */,
 				A82654C729F194B100B6E981 /* TrafficLightApp.swift in Sources */,
-				A82654D529F194F400B6E981 /* Lamp.swift in Sources */,
+				A82654D529F194F400B6E981 /* LampCircleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

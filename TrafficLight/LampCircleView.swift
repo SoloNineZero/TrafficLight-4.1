@@ -7,22 +7,22 @@
 
 import SwiftUI
 
-struct Lamp: View {
+struct LampCircleView: View {
     let color: Color
-    let alpha: Double
+    let opacity: Double
     
     var body: some View {
         Circle()
+            .frame(width: 120)
             .foregroundColor(color)
-            .frame(width: 120, height: 120)
-            .overlay(Circle().stroke(Color.white, lineWidth: 2))
             .shadow(color: color, radius: 10)
-            .opacity(alpha)
+            .opacity(opacity)
+            .overlay(Circle().stroke(Color.white, lineWidth: 2))
     }
 }
 
 struct Lamp_Previews: PreviewProvider {
     static var previews: some View {
-        Lamp(color: .green, alpha: 0.2)
+        LampCircleView(color: .red, opacity: 1)
     }
 }
